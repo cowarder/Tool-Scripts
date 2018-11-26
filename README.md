@@ -1,7 +1,7 @@
 This repo includes some scripts that might be used in daily life.
 
 
-timer.py:
+#timer.py:
 calculate the running time of your python code.  
 
 ```python
@@ -10,5 +10,5 @@ start_time = timer(None)
 timer(start_time)
 ```
 
-pdf2txt.py:  
+#pdf2txt.py:  
 transfer pdf file to txt.
