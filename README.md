@@ -12,3 +12,6 @@ timer(start_time)
 
 pdf2txt.py:  
 transfer pdf file to txt.
+
+NLP/SubMultiWords:
+This is useful when you want to substitute many keywords in a sentence by regex.
