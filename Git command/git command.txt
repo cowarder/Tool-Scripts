@@ -1,0 +1,20 @@
+﻿git add readme.txt  //将对文件的修改添加到版本库的暂存区
+
+git commit -m 'some info'	//将暂存区的内容一次性提交到分支
+
+git status	//掌握当前库的工作状态，比如哪几个文件被修改了
+
+git diff readme.txt		//详细说明作了哪些修改
+
+git log		//显示由近及远的提交日志    --pretty=oneline参数可以使显示美观一点
+
+git reset --hard HEAD^		//HEAD^^回退到上上次的commit,HEAD~100上100次版本， HEAD指向的就是当前版本
+
+git checkout -- readme.txt	//让文件返回最近一次commit或者add时的状态，误删文件的恢复
+
+版本回退:
+场景1：修改了工作区的某个文件，想直接丢弃工作区的修改:git checkout -- readme.txt
+场景2：修改了工作区的文件，并且将其添加到缓冲区，分为两步1.git reset HEAD readme.txt 2. git checkout -- readme.txt
+场景3：修改，添加，提交一气呵成，git reset --hard HEAD^，前提是没有推送到远程库
+
+
